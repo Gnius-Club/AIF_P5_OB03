@@ -1,24 +1,219 @@
-<!-- 
-HTML Template for Missions, delete and replace with mission HTML
--->
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Gnius Club</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playbook Intro Sesión 3: ¡Tu Primera Creación con IA!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-  <h1>
-    Playbook HTML Placeholder Template
-  </h1>
-  <p>
-    Replace with actual playbook code.
-  </p>
-  <script src="script.js"></script>
-</body>
 
+    <header>
+        <h1><span class="book-icon">💡</span> <strong>Playbook Intro Sesión 3: ¡Tu Primera Creación con IA!</strong></h1>
+        <div class="header-widgets">
+            <div class="timer-container">
+                <span id="timer">⏱️ 00:00</span>
+                <button id="startStop">Start</button>
+                <button id="reset">Reset</button>
+            </div>
+            <div class="theme-toggle">
+                <i class="fas fa-sun"></i>
+                <label class="switch">
+                    <input type="checkbox" id="theme-toggle-input">
+                    <span class="slider round"></span>
+                </label>
+                <i class="fas fa-moon"></i>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <aside class="activity-list">
+            <h2>Actividades</h2>
+            <ul>
+                <li><a href="#activity-1">1</a></li>
+                <li><a href="#activity-2">2</a></li>
+                <li><a href="#activity-3">3</a></li>
+                <li><a href="#activity-4">4</a></li>
+                <li><a href="#activity-5">5</a></li>
+            </ul>
+             <div class="sidebar-info">
+                <p>💡 Esta es la sesión "mágica". El objetivo es que los alumnos experimenten el flujo completo de Vibe Coding por primera vez.</p>
+                <p>⏱️ El Brain Spark es el núcleo. Asegúrese de que todos los alumnos logren hacer que su robot se mueva al final.</p>
+            </div>
+        </aside>
+
+        <main class="content">
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+
+            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
+            
+            <div class="activity-card" id="activity-1">
+                <h2>⚡ Actividad 1: Saludo y Conexión ⏰ 3 minutos</h2>
+                <p>Introducción energética, conectando las sesiones de configuración con la creación de hoy.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: ¡Llegó la hora de crear! ⏰ 3 minutos</h3>
+                            <p>Da la bienvenida y establece el tono: hoy es el día en que todo lo aprendido se pone en práctica para crear algo real.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Genios, llegó el momento! Ya tienen su pasaporte Gnius y su taller digital en MakeCode está listo. Hoy... ¡vamos a darle vida a las piezas del kit Nezha! Tendrán su primera experiencia como directores de soluciones, colaborando con Xolo para crear un robot que se mueve en el mundo real. ¿Listos para su primera creación?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-2">
+                <h2>⚡ Actividad 2: I Can Statement + Ejemplificación ⏰ 7 minutos</h2>
+                <p>Presentar el objetivo de la clase y mostrar un ejemplo tangible de lo que van a lograr.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Presentación del Ejemplo del Profesor ⏰ 3 minutos</h3>
+                            <p>Muestra tu vehículo Nezha pre-ensamblado y ejecuta el programa simple (avanzar, retroceder, girar).</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Para que vean lo que vamos a lograr, les mostraré un ejemplo. (Muestra el robot Nezha moviéndose adelante, luego atrás, y girando). ¿Vieron eso? Con unas pocas instrucciones, podemos controlar sus movimientos. Yo le di la idea a Xolo, él me dio el plan, y yo construí ese plan para que el robot cobrara vida. Eso es exactamente lo que harán ustedes.</p>
+                            </div>
+                        </div>
+                    </div>
+                     <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: "I Can Statement" ⏰ 4 minutos</h3>
+                            <p>Presenta formalmente el "I Can Statement", conectando la idea, el plan de la IA y la creación final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Hoy vamos a dominar este flujo de trabajo creativo. Al final de la clase, podrán decir con orgullo: '<strong>Yo puedo darle una instrucción a Xolo para crear un plan que haga que mi robot Nezha avance, retroceda y gire, y puedo construir ese plan en MakeCode</strong>.' ¡Este es el poder del Vibe Coding!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="activity-card" id="activity-3">
+                <h2>⚡ Actividad 3: AI GYM: El Plan del Ingeniero ⏰ 10 minutos</h2>
+                <p>Los alumnos usan a Xolo para obtener y entender el plan de acción (GCS).</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Pidiendo el Plan a Xolo ⏰ 5 minutos</h3>
+                            <p>Guía a los alumnos para que le pidan a Xolo el GCS para su primera creación, enfatizando la claridad en la instrucción.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Al A.I. GYM! Abran el chat con Xolo. Ahora, como directores, denle su instrucción ('vibe'). Escriban: '<strong>Xolo, mi idea es que mi robot Nezha avance por 2 segundos, luego retroceda por 2 segundos. Dame el plan (GCS) para construirlo en MakeCode.</strong>'</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Leyendo e Interpretando el GCS ⏰ 5 minutos</h3>
+                            <p>Proyecta y analiza la respuesta de Xolo, explicando las partes del Gnius Code Spark.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">Fíjense en la respuesta de Xolo. Es un 'plan' llamado Gnius Code Spark (GCS). Vamos a leerlo juntos. (Proyecta el GCS).</p>
+                                <pre class="dialogue assistant" style="color: #d32f2f;">
+POR SIEMPRE:
+    // Avanzar con ambos motores
+    nezha_motor_M1_velocidad(75)
+    nezha_motor_M2_velocidad(75)
+    ESPERAR 2 segundos
+    // Retroceder con ambos motores
+    nezha_motor_M1_velocidad(-75)
+    nezha_motor_M2_velocidad(-75)
+    ESPERAR 2 segundos
+    // Detenerse antes de repetir
+    nezha_motor_M1_velocidad(0)
+    nezha_motor_M2_velocidad(0)
+    ESPERAR 1 segundo
+                                </pre>
+                                <p class="dialogue assistant">`nezha_motor...()` es el comando para los 'músculos'. Un número positivo es para adelante, uno negativo es para atrás, y cero es para detenerse. Este plan es su mapa del tesoro. ¡Ahora, a construirlo!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+             <div class="activity-card" id="activity-4">
+                 <h2>⚡ Actividad 4: Brain Spark: ¡Manos al Código! ⏰ 15 minutos</h2>
+                <p>Poner en práctica el flujo de Vibe Coding: construir el robot, traducir el GCS a bloques y probar.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Ensamblaje Básico ⏰ 5 minutos</h3>
+                            <p>Guía a los alumnos en el ensamblaje de un vehículo simple con dos motores.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Es hora del Brain Spark! Lo primero, el hardware. Sigan las instrucciones visuales para ensamblar el chasis básico. Asegúrense de que los motores estén conectados a los puertos M1 y M2 de la placa Nezha. ¡Trabajen en equipo!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 2: Del Plan a los Bloques ⏰ 5 minutos</h3>
+                            <p>Indica a los alumnos que abran MakeCode y traduzcan su GCS a bloques, añadiendo la extensión "Nezha".</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                 <p class="dialogue assistant">¡Robot listo! Ahora, el cerebro. Abran MakeCode. Creen un nuevo proyecto. En 'Extensiones', busquen y añadan 'Nezha'. Ahora, traduzcan el plan de Xolo. Si el GCS dice `nezha_motor_M1_velocidad(75)`, busquen ese bloque en el menú 'Nezha' y colóquenlo. ¡Armen el programa siguiendo su mapa!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 3: ¡Prueba Real! ⏰ 5 minutos</h3>
+                            <p>Guía a los alumnos para que conecten la Micro:bit a la placa Nezha y descarguen el código para la prueba final.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Llegó la hora de la verdad! Conecten el cable de la Micro:bit a su computadora, descarguen el programa, y luego coloquen la Micro:bit en la placa Nezha. Enciendan la batería y... ¡vean a su creación moverse! Si algo falla, ¡excelente! Ser un ingeniero es ser un detective de errores. Revisen su plan, su código y sus conexiones.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="activity-card" id="activity-5">
+                <h2>⚡ Actividad 5: Gnius STORM ⏰ 5 minutos</h2>
+                <p>Los alumnos comparten sus creaciones y reflexionan sobre la experiencia.</p>
+                <div class="steps">
+                    <div class="step-card">
+                        <div class="step-content">
+                            <h3>Paso 1: Showcase y Reflexión Final ⏰ 5 minutos</h3>
+                            <p>Facilita un breve "Show & Tell" y cierra la sesión reforzando el concepto de Vibe Coding.</p>
+                        </div>
+                        <div class="collapsible">
+                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
+                            <div class="collapsible-content">
+                                <p class="dialogue assistant">¡Tiempo, ingenieros! ¿Quién logró que su robot Nezha siguiera el plan? ¡Fantástico! Hoy han vivido la experiencia completa de un creador de tecnología. Tuvieron una <strong>idea</strong> (su 'vibe'), la comunicaron a un experto en IA (Xolo), recibieron un <strong>plan</strong> detallado (GCS), y ustedes, como <strong>directores e ingenieros</strong>, construyeron tanto el hardware como el software para hacerlo realidad. ¡Felicidades por su primer robot y bienvenidos al increíble mundo del Vibe Coding!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
